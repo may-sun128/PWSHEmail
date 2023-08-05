@@ -29,7 +29,8 @@ catch
 }
 
 # if outlook is running, create a namespace 
-# TODO consolidate with the check above 
+# TODO consolidate with the check above -- eg $variable.GetType() 
+    # https://stackoverflow.com/questions/115643/is-powershell-a-strongly-typed-language
 if ($outlookWasAlreadyRunning) 
 {
     $namespace = $Outlook.GetNameSpace("MAPI")    
